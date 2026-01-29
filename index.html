@@ -50,6 +50,11 @@
     .status{font-size:13px;color:var(--muted);margin-top:8px}
     .mini{font-size:13px;color:var(--muted)}
     .radio{display:flex;gap:8px;align-items:flex-start}
+    footer{
+      margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
+      font-size:12.5px;color:var(--muted)
+    }
+    .footer-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   </style>
 </head>
 <body>
@@ -121,7 +126,7 @@
 
       <p class="note">
         ※ ここに書かれた言葉は、すぐには公開されません。<br>
-        運営が確認し、静かに選ばれ、時間差で公開されます。<br>
+        運営（軒下ラボ）が確認し、静かに選ばれ、時間差で公開されます。<br>
         評価・返信・名前表示はありません。
       </p>
     </div>
@@ -133,9 +138,21 @@
         残りは、同様の活動の展開と維持に使われます。
       </p>
       <p class="note">
-        ※ 支援は任意です。支援しなくても、すべて読むことができます。
+        ※ 寄付先の詳細および支援リンクは、各ジャンルの「読む」ページに後日掲載します。
       </p>
     </div>
+
+    <footer>
+      <div class="footer-row">
+        <span>運営：軒下ラボ</span>
+        <span>｜</span>
+        <a href="#" aria-disabled="true">お問い合わせ（後日実装）</a>
+      </div>
+      <p class="note">
+        ※ 医療・治療・緊急支援を目的とした場ではありません。<br>
+        強い危険がある場合は、専門機関へご相談ください。
+      </p>
+    </footer>
 
     <script>
       const KEY = "rw_draft_answers_v1";
