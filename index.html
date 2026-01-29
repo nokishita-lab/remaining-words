@@ -3,149 +3,170 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>remaining words</title>
-
+  <title>残された言葉</title>
   <style>
-    :root {
-      --bg: #f6f7f5;
-      --card: #ffffff;
-      --text: #2f2f2f;
-      --muted: #6f6f6f;
-      --line: #e5e5e5;
-      --accent: #7aa6a1;
+    :root{
+      --bg:#f6f7f5; --card:#ffffff; --text:#2f2f2f; --muted:#6f6f6f;
+      --line:#e6e6e6; --accent:#5f8f8a;
     }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--text);
-      font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif;
-      line-height: 1.9;
+    body{
+      margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;
+      line-height:1.9;
     }
-
-    main {
-      max-width: 760px;
-      margin: 0 auto;
-      padding: 28px 18px 64px;
+    main{max-width:760px;margin:0 auto;padding:28px 18px 64px}
+    h1{margin:0 0 10px;font-weight:600;letter-spacing:.04em;font-size:22px}
+    h2{margin:0 0 10px;font-weight:600;font-size:16px}
+    p{margin:0 0 12px;color:var(--muted)}
+    .card{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:16px;margin-top:16px
     }
-
-    h1 {
-      font-weight: 500;
-      letter-spacing: .06em;
-      margin: 0 0 10px;
+    .q{
+      padding:12px;border:1px solid var(--line);
+      border-radius:14px;margin-top:10px
     }
-
-    h2 {
-      font-size: 18px;
-      margin: 0 0 12px;
-      font-weight: 500;
+    .tag{font-size:12px;color:var(--muted);margin-bottom:4px}
+    .qtext{color:var(--text);font-size:15px}
+    .desc{font-size:12.5px;color:var(--muted);margin-top:8px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    textarea{
+      width:100%;min-height:140px;resize:vertical;
+      border-radius:14px;border:1px solid var(--line);
+      padding:12px;background:#fbfbfb;color:var(--text);
+      font-size:15px;line-height:1.8;margin-top:10px;
     }
-
-    p {
-      margin: 0 0 14px;
-      color: var(--muted);
+    .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:10px}
+    button{
+      border:none;border-radius:14px;padding:12px 14px;
+      background:var(--accent);color:#fff;font-weight:700;
     }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 18px;
-      margin-top: 20px;
+    .ghost{
+      background:transparent;color:var(--accent);
+      border:1px solid var(--line);
     }
-
-    .question {
-      margin-top: 14px;
-    }
-
-    .question-title {
-      font-size: 14px;
-      color: var(--muted);
-      margin-bottom: 4px;
-    }
-
-    .question-text {
-      font-size: 16px;
-      margin-bottom: 6px;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .actions {
-      margin-top: 16px;
-      font-size: 14px;
-    }
-
-    .note {
-      font-size: 13px;
-      color: var(--muted);
-      margin-top: 10px;
-    }
+    .note{font-size:12.5px;color:var(--muted);margin-top:10px}
+    .status{font-size:13px;color:var(--muted);margin-top:8px}
+    .mini{font-size:13px;color:var(--muted)}
+    .radio{display:flex;gap:8px;align-items:flex-start}
   </style>
 </head>
-
 <body>
   <main>
-    <h1>remaining words</h1>
-
+    <h1>残された言葉</h1>
     <p>
       言葉になる前のものが、<br>
-      雨宿りする場所。
+      静かに置かれていく場所。
     </p>
 
     <div class="card">
-      <h2>いま、誰かの言葉を読む</h2>
-
-      <div class="question">
-        <div class="question-title">疲れ・孤独</div>
-        <div class="question-text">
-          これまでの人生で、<br>
-          一番救われた言葉は？
-        </div>
-        <a href="/genre1.html">この問いの言葉を読む →</a>
+      <h2>誰かの言葉を読む</h2>
+      <div class="row mini">
+        <a href="/genre1.html">疲れ・孤独 →</a>
+        <a href="/genre2.html">生活の不安 →</a>
+        <a href="/genre3.html">生きづらさ →</a>
       </div>
-
-      <div class="question">
-        <div class="question-title">生活の不安</div>
-        <div class="question-text">
-          誰にも言えなかった不安は、<br>
-          どんなことですか？
-        </div>
-        <a href="/genre2.html">この問いの言葉を読む →</a>
-      </div>
-
-      <div class="question">
-        <div class="question-title">生きづらさ</div>
-        <div class="question-text">
-          それでも、まだあなたが<br>
-          生きている理由はなんですか？
-        </div>
-        <a href="/genre3.html">この問いの言葉を読む →</a>
-      </div>
-
       <p class="note">
-        ※ ここにある言葉は、すぐには公開されません。<br>
-        静かに選ばれ、時間差で公開されます。
+        ※ 表示されている言葉は、運営が静かに選び、時間差で公開したものです。
       </p>
     </div>
 
     <div class="card">
-      <h2>書くことについて</h2>
-      <p>
-        読むだけでも構いません。<br>
-        書かなくても、ここにいていい場所です。
-      </p>
+      <h2>いま答える問いを選ぶ</h2>
+
+      <div class="q">
+        <label class="radio">
+          <input type="radio" name="q" value="q1" checked>
+          <div>
+            <div class="tag">疲れ・孤独</div>
+            <div class="qtext">これまでの人生で、一番救われた言葉は？</div>
+          </div>
+        </label>
+      </div>
+
+      <div class="q">
+        <label class="radio">
+          <input type="radio" name="q" value="q2">
+          <div>
+            <div class="tag">生活の不安</div>
+            <div class="qtext">誰にも言えなかった不安は、どんなことですか？</div>
+          </div>
+        </label>
+      </div>
+
+      <div class="q">
+        <label class="radio">
+          <input type="radio" name="q" value="q3">
+          <div>
+            <div class="tag">生きづらさ</div>
+            <div class="qtext">それでも、まだあなたが生きている理由はなんですか？</div>
+            <div class="desc">
+              ※ この問いは、あなたを肯定させるためのものではありません。<br>
+              あなたが自分を否定してきた理由や迷いも、もしかしたら誰かの生きる理由につながるかもしれない。そう考えて置いています。
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <h2 style="margin-top:14px;">言葉を残す</h2>
+      <textarea id="answer" maxlength="1200" placeholder="ここに書いてください（匿名でOK）"></textarea>
+
+      <div class="row">
+        <button id="save">いったん残す</button>
+        <button id="clear" class="ghost" type="button">消す</button>
+      </div>
+
+      <div id="status" class="status"></div>
+
       <p class="note">
+        ※ ここに書かれた言葉は、すぐには公開されません。<br>
+        運営が確認し、静かに選ばれ、時間差で公開されます。<br>
         評価・返信・名前表示はありません。
       </p>
     </div>
+
+    <div class="card">
+      <h2>支援と寄付</h2>
+      <p>
+        支援金の一部は選定した支援先へ寄付され、<br>
+        残りは、同様の活動の展開と維持に使われます。
+      </p>
+      <p class="note">
+        ※ 支援は任意です。支援しなくても、すべて読むことができます。
+      </p>
+    </div>
+
+    <script>
+      const KEY = "rw_draft_answers_v1";
+      const statusEl = document.getElementById("status");
+      const answerEl = document.getElementById("answer");
+
+      function getSelectedQ(){
+        const el = document.querySelector('input[name="q"]:checked');
+        return el ? el.value : "q1";
+      }
+      function load(){
+        try{ return JSON.parse(localStorage.getItem(KEY) || "[]"); }catch{ return []; }
+      }
+
+      document.getElementById("save").addEventListener("click", () => {
+        const text = answerEl.value.trim();
+        if(!text){ statusEl.textContent = "空のままは残せません。"; return; }
+        const q = getSelectedQ();
+        const items = load();
+        items.unshift({ q, text, at: new Date().toISOString() });
+        items.splice(30);
+        localStorage.setItem(KEY, JSON.stringify(items));
+        answerEl.value = "";
+        statusEl.textContent = "いったん残しました（下書き保存）。公開は承認後です。";
+      });
+
+      document.getElementById("clear").addEventListener("click", () => {
+        answerEl.value = "";
+        statusEl.textContent = "";
+      });
+    </script>
   </main>
 </body>
 </html>
