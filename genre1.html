@@ -3,95 +3,147 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ことばのゆくえ｜疲れ・孤独</title>
+  <title>ことばたち｜疲弊・孤独</title>
   <style>
     :root{
-      --bg:#f6f7f5; --card:#ffffff; --text:#2f2f2f; --muted:#6f6f6f;
-      --line:#e6e6e6; --accent:#5f8f8a;
+      --bg:#fafafa;
+      --card:#ffffff;
+      --text:#222;
+      --sub:#666;
+      --line:#e5e5e5;
+      --accent:#4f8f8b;
     }
-    body{margin:0;background:var(--bg);color:var(--text);
-      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;line-height:1.9}
-    main{max-width:760px;margin:0 auto;padding:24px 18px 64px}
-    h1{margin:0 0 6px;font-weight:600;font-size:20px}
-    h2{margin:0 0 10px;font-weight:600;font-size:16px}
-    p{margin:0 0 12px;color:var(--muted)}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .card{background:var(--card);border:1px solid var(--line);
-      border-radius:16px;padding:16px;margin-top:16px}
-    .item{padding:14px;border:1px solid var(--line);
-      border-radius:14px;margin-top:10px;background:#fff}
-    .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
-    footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
-      font-size:12.5px;color:var(--muted)}
-    .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;
+      line-height:1.7;
+    }
+    main{
+      max-width:680px;
+      margin:0 auto;
+      padding:32px 20px 64px;
+    }
+    h1{
+      font-size:22px;
+      margin-bottom:8px;
+    }
+    .lead{
+      color:var(--sub);
+      font-size:14px;
+      margin-bottom:24px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--line);
+      border-radius:12px;
+      padding:20px;
+      margin-bottom:24px;
+    }
+    .word{
+      margin-bottom:12px;
+    }
+    .meta{
+      font-size:12px;
+      color:var(--sub);
+    }
+    h2{
+      font-size:18px;
+      margin-bottom:12px;
+    }
+    textarea{
+      width:100%;
+      min-height:100px;
+      padding:12px;
+      font-size:14px;
+      border-radius:8px;
+      border:1px solid var(--line);
+      box-sizing:border-box;
+    }
+    button{
+      margin-top:12px;
+      padding:10px 16px;
+      font-size:14px;
+      border-radius:8px;
+      border:1px solid var(--accent);
+      background:#fff;
+      color:var(--accent);
+      cursor:pointer;
+    }
+    button:hover{
+      background:#f0f7f6;
+    }
+    footer{
+      margin-top:48px;
+      padding-top:24px;
+      border-top:1px solid var(--line);
+      font-size:12px;
+      color:var(--sub);
+    }
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
   </style>
 </head>
 <body>
-  <main>
-    <h1>疲れ・孤独</h1>
-    <p>
-      これまでの人生で、<br>
-      一番救われた言葉は？
+<main>
+
+  <h1>疲弊・孤独</h1>
+  <p class="lead">
+    これまでの人生で、<br>
+    <strong>一番救われた言葉</strong>は何でしたか。
+  </p>
+
+  <div class="card">
+    <div class="word">
+      何も解決しなかったけど、<br>
+      「そばにいるよ」と言われた。
+    </div>
+    <div class="meta">匿名・時間差公開</div>
+  </div>
+
+  <div class="card">
+    <div class="word">
+      「それでも十分やってるよ」という一言で、泣いてしまった。
+    </div>
+    <div class="meta">匿名・時間差公開</div>
+  </div>
+
+  <div class="card">
+    <h2>あなたの言葉を残す</h2>
+    <textarea placeholder="ここに、あなたが救われた言葉を書いてください。"></textarea>
+    <button>この言葉を残す</button>
+    <p class="meta">
+      ※ 投稿は匿名です。<br>
+      ※ 掲載前に運営（軒下ラボ）が確認し、時間差で公開されます。<br>
+      ※ 評価・返信・編集はできません。
     </p>
+  </div>
 
-    <div class="card">
-      <h2>みんなの言葉</h2>
+  <div class="card">
+    <h2>支援と寄付</h2>
+    <p>
+      このジャンルへの支援金の一部は、<br>
+      <strong>TELL Lifeline</strong>（心の健康に関する支援団体）への寄付に充てられます。
+    </p>
+    <p>
+      残りは、この場所と同様の活動の展開と維持に使われます。
+    </p>
+    <p class="meta">
+      ※ 寄付は後日まとめて実施し、状況は適切な形で報告します。
+    </p>
+    <p>
+      <a href="#">支援する（後日実装）</a>
+    </p>
+  </div>
 
-      <div class="item">
-        <div class="meta">匿名・時間差公開</div>
-        <div>「今日はもう休んでいいよ」と言われた夜、初めて深く息ができた。</div>
-      </div>
+  <footer>
+    <a href="./index.html">← トップへ戻る</a><br>
+    運営：軒下ラボ
+  </footer>
 
-      <div class="item">
-        <div class="meta">匿名・時間差公開</div>
-        <div>結果より先に「来てくれてありがとう」と言われたこと。</div>
-      </div>
-
-      <div class="item">
-        <div class="meta">匿名・時間差公開</div>
-        <div>「わからないままでいい」と言われて、責められなくなった。</div>
-      </div>
-
-      <div class="item">
-        <div class="meta">匿名・時間差公開</div>
-        <div>何も解決しなかったけど、「そばにいるよ」と言われた。</div>
-      </div>
-
-      <div class="item">
-        <div class="meta">匿名・時間差公開</div>
-        <div>「それでも十分やってるよ」という一言で、泣いてしまった。</div>
-      </div>
-
-      <p class="meta">
-        ※ 掲載されている言葉は、運営（軒下ラボ）が確認し、<br>
-        静かに選び、時間差で公開しています。
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>支援と寄付</h2>
-      <p>
-        このジャンルへの支援金の一部は、<br>
-        <strong>entity["organization","TELL Lifeline","japan mental health nonprofit"]</strong> への寄付に充てられます。
-      </p>
-      <p>
-        残りは、この場所と同様の活動の展開と維持に使われます。
-      </p>
-      <p class="meta">
-        ※ 寄付は後日まとめて実施し、状況は適切な形で報告します。
-      </p>
-      <p>
-        <a href="#" aria-disabled="true">支援する（後日実装）</a>
-      </p>
-    </div>
-
-    <footer>
-      <div class="row">
-        <a href="/">← トップへ戻る</a>
-        <span>運営：軒下ラボ</span>
-      </div>
-    </footer>
-  </main>
+</main>
 </body>
 </html>
