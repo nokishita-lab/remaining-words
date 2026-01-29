@@ -1,162 +1,151 @@
 <!doctype html>
 <html lang="ja">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>残された言葉</title>
-  <meta name="description" content="誰かに救われた言葉を、静かに残す場所。収益の50%は支援団体へ寄付されます。">
-  <meta name="robots" content="noindex, nofollow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>remaining words</title>
 
   <style>
-    :root{
-      --bg:#0f1115;
-      --panel:#151820;
-      --line:#23283a;
-      --text:#e7e9ee;
-      --sub:#b9bed1;
-      --accent:#d6d9ff;
+    :root {
+      --bg: #f6f7f5;
+      --card: #ffffff;
+      --text: #2f2f2f;
+      --muted: #6f6f6f;
+      --line: #e5e5e5;
+      --accent: #7aa6a1;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",system-ui,sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      line-height:1.85;
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif;
+      line-height: 1.9;
     }
-    main{
-      max-width:760px;
-      margin:0 auto;
-      padding:36px 20px 64px;
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 28px 18px 64px;
     }
-    h1,h2{
-      font-weight:600;
-      letter-spacing:.02em;
+
+    h1 {
+      font-weight: 500;
+      letter-spacing: .06em;
+      margin: 0 0 10px;
     }
-    h1{font-size:30px;margin-bottom:8px}
-    h2{font-size:20px;margin-top:40px}
-    p{margin:12px 0;color:var(--sub)}
-    .panel{
-      background:var(--panel);
-      border:1px solid var(--line);
-      border-radius:14px;
-      padding:22px;
-      margin-top:28px;
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 12px;
+      font-weight: 500;
     }
-    .question{
-      font-size:18px;
-      color:var(--text);
-      margin:18px 0 22px;
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
     }
-    textarea{
-      width:100%;
-      min-height:140px;
-      background:#0c0e13;
-      color:var(--text);
-      border:1px solid var(--line);
-      border-radius:10px;
-      padding:14px;
-      font-size:15px;
-      resize:vertical;
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 20px;
     }
-    button{
-      margin-top:16px;
-      background:transparent;
-      color:var(--accent);
-      border:1px solid var(--line);
-      border-radius:999px;
-      padding:10px 18px;
-      font-size:14px;
-      cursor:pointer;
+
+    .question {
+      margin-top: 14px;
     }
-    button:hover{border-color:var(--accent)}
-    .note{
-      font-size:13px;
-      color:var(--sub);
-      margin-top:14px;
+
+    .question-title {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 4px;
     }
-    footer{
-      margin-top:64px;
-      padding-top:28px;
-      border-top:1px solid var(--line);
-      font-size:13px;
-      color:var(--sub);
+
+    .question-text {
+      font-size: 16px;
+      margin-bottom: 6px;
     }
-    a{color:var(--accent);text-decoration:none}
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .actions {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 10px;
+    }
   </style>
 </head>
 
 <body>
-<main>
+  <main>
+    <h1>remaining words</h1>
 
-  <h1>残された言葉</h1>
-  <p>
-    誰かに救われた言葉を、静かに残す場所です。<br>
-    評価も、共有も、求めません。
-  </p>
+    <p>
+      言葉になる前のものが、<br>
+      雨宿りする場所。
+    </p>
 
-  <div class="panel">
-    <div class="question">
-      これまでの人生で、<br>
-      <strong>一度だけ救われた言葉</strong>は何ですか？
+    <div class="card">
+      <h2>いま、誰かの言葉を読む</h2>
+
+      <div class="question">
+        <div class="question-title">疲れ・孤独</div>
+        <div class="question-text">
+          これまでの人生で、<br>
+          一番救われた言葉は？
+        </div>
+        <a href="/genre1.html">この問いの言葉を読む →</a>
+      </div>
+
+      <div class="question">
+        <div class="question-title">生活の不安</div>
+        <div class="question-text">
+          誰にも言えなかった不安は、<br>
+          どんなことですか？
+        </div>
+        <a href="/genre2.html">この問いの言葉を読む →</a>
+      </div>
+
+      <div class="question">
+        <div class="question-title">生きづらさ</div>
+        <div class="question-text">
+          それでも、まだあなたが<br>
+          生きている理由はなんですか？
+        </div>
+        <a href="/genre3.html">この問いの言葉を読む →</a>
+      </div>
+
+      <p class="note">
+        ※ ここにある言葉は、すぐには公開されません。<br>
+        静かに選ばれ、時間差で公開されます。
+      </p>
     </div>
 
-    <textarea placeholder="ここに、あなたの経験としての言葉を残してください（200字以内）"></textarea>
-    <button>この言葉を残す</button>
-
-    <div class="note">
-      ※ 投稿は匿名です。<br>
-      ※ 編集・返信・評価はできません。
+    <div class="card">
+      <h2>書くことについて</h2>
+      <p>
+        読むだけでも構いません。<br>
+        書かなくても、ここにいていい場所です。
+      </p>
+      <p class="note">
+        評価・返信・名前表示はありません。
+      </p>
     </div>
-  </div>
-
-  <div class="panel">
-    <h2>この場所について</h2>
-    <p>
-      ここでは、誰かを攻撃するための言葉ではなく、<br>
-      <strong>自分の経験としての言葉</strong>が残されることを願っています。
-    </p>
-    <p>
-      不適切な表現を機械的に排除することはしていません。<br>
-      ただし、明確な加害意図や煽動が見られる投稿は、<br>
-      反論や通知を行わず、静かに表示されなくなることがあります。
-    </p>
-    <p>
-      ここは議論の場ではなく、<br>
-      <strong>雨宿りのための軒下</strong>です。
-    </p>
-  </div>
-
-  <div class="panel">
-    <h2>支援と寄付について</h2>
-    <p>
-      この場所を維持し、<br>
-      同じような苦しみを抱える人を支える活動につなげるため、<br>
-      有志による支援を受け付けています。
-    </p>
-    <p>
-      支援金の <strong>50%</strong> は、<br>
-      心の支援を行う団体へ寄付されます。<br>
-      残りの <strong>50%</strong> は、<br>
-      同様の心の活動を継続・展開するために使われます。
-    </p>
-    <p>
-      <a href="#" target="_blank">支援する（外部サイト）</a>
-    </p>
-  </div>
-
-  <footer>
-    運営：軒下ラボ<br>
-    この場所は、成果や正しさを測るためのものではありません。
-  </footer>
-<hr>
-
-<h2>3つの問い</h2>
-<ul>
-  <li><a href="/genre1.html">① 疲弊・孤独：「これまでの人生で、一度だけ救われた言葉は？」</a></li>
-  <li><a href="/genre2.html">② 経済的・生活的困窮：「誰にも言えなかった不安は、何ですか？」</a></li>
-  <li><a href="/genre3.html">③ 存在価値・自己否定：「それでも、まだ生きている理由は何ですか？」</a></li>
-</ul>
-</main>
+  </main>
 </body>
 </html>
