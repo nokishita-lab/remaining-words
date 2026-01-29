@@ -9,16 +9,23 @@
       --bg:#f6f7f5; --card:#ffffff; --text:#2f2f2f; --muted:#6f6f6f;
       --line:#e6e6e6; --accent:#5f8f8a; --alert:#9a5b5b;
     }
-    body{margin:0;background:var(--bg);color:var(--text);
-      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;line-height:1.9}
+    body{
+      margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;
+      line-height:1.9;
+    }
     main{max-width:760px;margin:0 auto;padding:28px 18px 64px}
     h1{margin:0 0 10px;font-weight:600;letter-spacing:.04em;font-size:22px}
     h2{margin:0 0 10px;font-weight:600;font-size:16px}
     p{margin:0 0 12px;color:var(--muted)}
-    .card{background:var(--card);border:1px solid var(--line);
-      border-radius:16px;padding:16px;margin-top:16px}
-    .q{padding:12px;border:1px solid var(--line);
-      border-radius:14px;margin-top:10px}
+    .card{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:16px;margin-top:16px
+    }
+    .q{
+      padding:12px;border:1px solid var(--line);
+      border-radius:14px;margin-top:10px
+    }
     .tag{font-size:12px;color:var(--muted);margin-bottom:4px}
     .qtext{color:var(--text);font-size:15px}
     .desc{font-size:12.5px;color:var(--muted);margin-top:8px}
@@ -43,8 +50,10 @@
     .status{font-size:13px;color:var(--muted);margin-top:8px}
     .mini{font-size:13px;color:var(--muted)}
     .radio{display:flex;gap:8px;align-items:flex-start}
-    footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
-      font-size:12.5px;color:var(--muted)}
+    footer{
+      margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
+      font-size:12.5px;color:var(--muted)
+    }
     .footer-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
     .hotline{
       border:1px solid rgba(154,91,91,.25);
@@ -52,6 +61,7 @@
     }
     .hotline h3{margin:0 0 8px;font-size:15px;color:var(--alert)}
     .hotline a{color:var(--alert);font-weight:600}
+    .hotline .meta{font-size:12px;color:var(--muted)}
   </style>
 </head>
 <body>
@@ -135,7 +145,7 @@
         残りは、同様の活動の展開と維持に使われます。
       </p>
       <p class="note">
-        ※ 寄付先の詳細および支援リンクは、各ジャンルの「読む」ページに後日掲載します。
+        ※ 寄付先の詳細および支援リンクは、各ジャンルのページに記載しています。
       </p>
     </div>
 
@@ -150,21 +160,26 @@
         ※ 医療・治療・緊急支援を目的とした場ではありません。
       </p>
 
-      <!-- 緊急ホットライン -->
       <div class="hotline">
         <h3>緊急性が高いと感じる方へ</h3>
-        <p class="note">
+        <p class="meta">
           いま強い不安や危険を感じている場合は、ここを閉じてでも、下記の窓口につながってください。
         </p>
-        <ul class="note">
-          <li>よりそいホットライン（24時間）：
+        <ul class="meta">
+          <li>
+            よりそいホットライン（24時間）：
             <a href="tel:0120279279">0120-279-279</a>
+            ／ <a href="https://yorisoi-chat.jp/" target="_blank" rel="noopener">公式</a>
           </li>
-          <li>いのちの電話：
+          <li>
+            いのちの電話：
             <a href="tel:0120783556">0120-783-556</a>
+            ／ <a href="https://www.inochinodenwa.org/" target="_blank" rel="noopener">公式</a>
           </li>
-          <li>TELL Lifeline（英日）：
+          <li>
+            TELL Lifeline（英日）：
             <a href="tel:05018071230">050-1807-1230</a>
+            ／ <a href="https://telljp.com/" target="_blank" rel="noopener">公式</a>
           </li>
           <li>緊急の危険がある場合：<strong>110 / 119</strong></li>
         </ul>
