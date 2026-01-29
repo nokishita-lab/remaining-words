@@ -9,21 +9,30 @@
       --bg:#f6f7f5; --card:#ffffff; --text:#2f2f2f; --muted:#6f6f6f;
       --line:#e6e6e6; --accent:#5f8f8a;
     }
-    body{margin:0;background:var(--bg);color:var(--text);
-      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;line-height:1.9}
+    body{
+      margin:0;background:var(--bg);color:var(--text);
+      font-family:system-ui,-apple-system,"Noto Sans JP",sans-serif;
+      line-height:1.9;
+    }
     main{max-width:760px;margin:0 auto;padding:24px 18px 64px}
     h1{margin:0 0 6px;font-weight:600;font-size:20px}
     h2{margin:0 0 10px;font-weight:600;font-size:16px}
     p{margin:0 0 12px;color:var(--muted)}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
-    .card{background:var(--card);border:1px solid var(--line);
-      border-radius:16px;padding:16px;margin-top:16px}
-    .item{padding:14px;border:1px solid var(--line);
-      border-radius:14px;margin-top:10px;background:#fff}
+    .card{
+      background:var(--card);border:1px solid var(--line);
+      border-radius:16px;padding:16px;margin-top:16px
+    }
+    .item{
+      padding:14px;border:1px solid var(--line);
+      border-radius:14px;margin-top:10px;background:#fff
+    }
     .meta{font-size:12px;color:var(--muted);margin-bottom:6px}
-    footer{margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
-      font-size:12.5px;color:var(--muted)}
+    footer{
+      margin-top:28px;padding-top:16px;border-top:1px solid var(--line);
+      font-size:12.5px;color:var(--muted)
+    }
     .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
   </style>
 </head>
@@ -38,7 +47,6 @@
     <div class="card">
       <h2>みんなの言葉</h2>
 
-      <!-- 初期シード（静か・短文・否定を含んでよい） -->
       <div class="item">
         <div class="meta">匿名・時間差公開</div>
         <div>理由はわからない。ただ、今日はここまで来た。</div>
@@ -73,15 +81,17 @@
     <div class="card">
       <h2>支援と寄付</h2>
       <p>
-        このページを読んで、もし気持ちが動いたら。<br>
-        支援は任意です。
+        このジャンルへの支援金の一部は、<br>
+        <strong>entity["organization","自殺予防いのちの電話","japan suicide prevention"]</strong> への寄付に充てられます。
       </p>
       <p>
-        支援金の一部は選定した支援先へ寄付され、<br>
-        残りは、同様の活動の展開と維持に使われます。
+        残りは、この場所と同様の活動の展開と維持に使われます。
       </p>
       <p class="meta">
-        ※ 支援リンクは後日掲載します。
+        ※ 寄付は後日まとめて実施し、状況は適切な形で報告します。
+      </p>
+      <p>
+        <a href="#" aria-disabled="true">支援する（後日実装）</a>
       </p>
     </div>
 
